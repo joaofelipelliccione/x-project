@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/config/site.config';
 import { buttonVariants } from '@/components/ui/button';
-import { Icons } from './icon';
-import { MainNav } from '@/components/main-nav';
-import { ThemeToggle } from './theme-toggle';
+import { Icons } from '../icon';
+import { MainNav } from '@/components/navbar/MainNav';
+import { ThemeToggle } from './ThemeToggle';
 
 export function SiteHeader() {
   return (
