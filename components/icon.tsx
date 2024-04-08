@@ -1,4 +1,4 @@
-import { LucideProps, Moon, SunMedium, Twitter } from 'lucide-react';
+import { Heart, LucideProps, Moon, SunMedium, Twitter } from 'lucide-react';
 
 export const Icons = {
   sun: SunMedium,
@@ -20,4 +20,5 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  heart: Heart,
 };

@@ -5,7 +5,7 @@ import { siteConfig } from '@/config/site.config';
 import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import { SiteHeader } from '@/components/navbar/Header';
-import { TailwindIndicator } from '@/components/tailwind-indicator';
+import { TailwindIndicator } from '@/components/TailwindIndicator';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 
 export const metadata: Metadata = {
