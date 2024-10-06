@@ -1,6 +1,6 @@
 # X-Project
 
-#### A NextJS boilerplate that includes everything one needs to build an AI tool, SaaS or any other web app!
+#### A Typescript NextJS boilerplate that includes everything one needs to build an AI tool, SaaS or any other web app!
 
 ## Installation
 
@@ -30,7 +30,11 @@ cp .env.local.example .env.local
 pnpm run dev
 ```
 
-## Tech Stack + Features + Main Libs
+## Tech Stack
+
+### Package Manager
+
+- [pnpm](https://pnpm.io/) – Fast, disk space efficient package manager.
 
 ### Frameworks
 
@@ -39,7 +43,7 @@ pnpm run dev
 ### UI
 
 - [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development.
-- [Shadcn/ui](https://ui.shadcn.com/) – Re-usable components built using Radix UI and Tailwind CSS.
+- [shadcn/ui](https://ui.shadcn.com/) – Re-usable components built using Radix UI and Tailwind CSS.
 - [Framer Motion](https://framer.com/motion) – Motion library for React to animate components with ease.
 - [Lucide](https://lucide.dev/) – Beautifully simple, pixel-perfect icons.
 - [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) – Optimize custom fonts and remove external network requests for improved performance.
