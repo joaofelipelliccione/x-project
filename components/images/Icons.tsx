@@ -1,4 +1,4 @@
-import { Heart, Moon, SunMedium, Pencil, CircleAlert, MoveRight, Twitter, Github } from 'lucide-react';
+import { Heart, Moon, SunMedium, Pencil, CircleAlert, MoveRight, Github } from 'lucide-react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 const iconVariants = cva('shrink-0', {
@@ -26,6 +26,5 @@ export const Icons = {
   pencil: (props: IconProps) => <Icon {...props} SVG={Pencil} />,
   circleAlert: (props: IconProps) => <Icon {...props} SVG={CircleAlert} />,
   moveRight: (props: IconProps) => <Icon {...props} SVG={MoveRight} />,
-  twitter: (props: IconProps) => <Icon {...props} SVG={Twitter} />,
   gitHub: (props: IconProps) => <Icon {...props} SVG={Github} />,
 };

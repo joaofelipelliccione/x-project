@@ -123,7 +123,7 @@ describe('http.service.ts', () => {
       it('should handle GET requests', async () => {
         const result = await service.get(ENDPOINT, CONFIG);
 
-        expect(MOCK_AXIOS.get).toHaveBeenCalledWith(ENDPOINT, undefined, CONFIG);
+        expect(MOCK_AXIOS.get).toHaveBeenCalledWith(ENDPOINT, CONFIG);
         expect(result).toEqual(MOCK_RESPONSE.data);
       });
 
@@ -151,7 +151,7 @@ describe('http.service.ts', () => {
       it('should handle DELETE requests', async () => {
         const result = await service.delete(ENDPOINT, CONFIG);
 
-        expect(MOCK_AXIOS.delete).toHaveBeenCalledWith(ENDPOINT, undefined, CONFIG);
+        expect(MOCK_AXIOS.delete).toHaveBeenCalledWith(ENDPOINT, CONFIG);
         expect(result).toEqual(MOCK_RESPONSE.data);
       });
     });

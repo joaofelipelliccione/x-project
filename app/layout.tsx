@@ -5,7 +5,8 @@ import { siteConfig } from '@/config/site.config';
 import { fontSans, fontMono } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import { SiteHeader } from '@/components/navbar/Header';
-import { TailwindIndicator } from '@/components/TailwindIndicator';
+
+import { TailwindIndicator } from '@/components/dev/TailwindIndicator';
 import { Providers } from '@/providers/Providers';
 
 export const metadata: Metadata = {
@@ -36,8 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             'bg-background min-h-screen font-sans antialiased',
             fontSans.variable,
             fontMono.variable
-          )}
-        >
+          )}>
           <Providers>
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />

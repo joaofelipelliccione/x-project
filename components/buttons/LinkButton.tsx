@@ -18,8 +18,7 @@ export default function LinkButton({
       href={href}
       className={className}
       target={openInNewTab ? '_blank' : undefined}
-      rel={openInNewTab ? 'noopener noreferrer' : undefined}
-    >
+      rel={openInNewTab ? 'noopener noreferrer' : undefined}>
       <Button {...props}> {children}</Button>
     </Link>
   );

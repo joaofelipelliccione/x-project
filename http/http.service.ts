@@ -49,7 +49,7 @@ export class HttpService {
       config.headers = {};
     }
     config.headers.Accept = `application/json;v=${config.version || '1'}`;
-    
+
     try {
       const response: AxiosResponse<T> = !data
         ? await this.axiosInstance[method](url, config)
