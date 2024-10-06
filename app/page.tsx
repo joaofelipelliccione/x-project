@@ -1,14 +1,12 @@
-import Link from 'next/link';
-
 import { siteConfig } from '@/config/site.config';
-import { buttonVariants } from '@/components/ui/button';
-import { Icons } from '@/components/icon';
+import { Icons } from '@/components/images/Icons';
 import { StandardCarousel } from '@/components/StandardCarousel';
+import LinkButton from '@/components/buttons/LinkButton';
 
 export default function IndexPage() {
   return (
     <section className="container pb-8 pt-6 md:py-10">
-      <div className="flex flex-col justify-between sm:flex-row">
+      <div className="flex flex-col justify-between bg-red-400 sm:flex-row">
         <div className="flex flex-col gap-2">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
             Web App Template
@@ -17,14 +15,14 @@ export default function IndexPage() {
             Made with <Icons.heart className="inline size-4 fill-current" /> by João Felipe P
           </p>
         </div>
-        <Link
+        <LinkButton
+          variant="default"
           href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={`${buttonVariants({ size: 'sm' })} mt-4 max-w-[180px]`}
+          openInNewTab
+          className="mt-4 max-w-[180px] sm:mt-0 sm:self-center"
         >
           Github Repository
-        </Link>
+        </LinkButton>
       </div>
       <div className="mt-6 flex">
         <StandardCarousel />
@@ -32,5 +30,3 @@ export default function IndexPage() {
     </section>
   );
 }
-
-//

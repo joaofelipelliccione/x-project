@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-import { NavItem } from '@/types/nav.type';
+import { NavItem } from '@/components/types/nav.type';
 import { siteConfig } from '@/config/site.config';
 import { cn } from '@/lib/utils';
-import { Icons } from '../icon';
+import { Images } from '../images/Images';
 
 interface MainNavProps {
   items?: NavItem[];
@@ -14,7 +14,7 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="size-6" />
+        <Images.logo className="size-8 fill-current" />
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </Link>
       {items?.length ? (
